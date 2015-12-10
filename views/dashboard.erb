@@ -1,3 +1,5 @@
+<% require "pry" %>
+
 <div class="small-6 small-offset-3 columns">
   <div class="callout primary">
     <h3>Location</h3>
@@ -21,7 +23,15 @@
     </p>
     <ul>
       <% @news.each do |story| %>
-      <li><a href=" <%= story["url"]%>"><%= story["title"] %></a></li>
+      <p>
+        <% if story['multimedia'][0].nil? %>
+          <img id="ezra" src="http://static01.nyt.com/images/icons/t_logo_291_black.png">
+        <% else %>
+          <img src=<%= story['multimedia'][0]['url'] %> >
+        <% end %>
+        <a href=" <%= story["url"]%>"><%= story["title"] %></a>
+      </p>
+      <br>
       <% end %>
     </ul>
   </div>
@@ -30,13 +40,17 @@
 
 
   <div class="callout primary" id="Events">
-    <h3>Event</h3>
+    <h3>
+      Events
+      <img id="seatgeek" src="https://upload.wikimedia.org/wikipedia/en/1/1b/SeatGeek.png">
+    </h3>
+
     <p>
       Here are today's events:
     </p>
     <ul>
       <% @events.each do |event| %>
-      <li><a href="<%= event['url']%>"><%= event["title"] %></a></li>
+      <p><a href="<%= event['url']%>"><%= event["title"] %></a></p>
       <% end %>
     </ul>
   </div>

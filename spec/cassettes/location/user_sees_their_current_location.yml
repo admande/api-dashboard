@@ -10,7 +10,7 @@ http_interactions:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
       Host:
@@ -25,7 +25,7 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, HEAD, OPTIONS
       Access-Control-Allow-Origin:
-      - '*'
+      - "*"
       Content-Type:
       - application/json
       X-Database-Date:
@@ -46,4 +46,733 @@ http_interactions:
         {"ip":"127.0.0.1","country_code":"","country_name":"","region_code":"","region_name":"","city":"","zip_code":"","time_zone":"","latitude":0,"longitude":0,"metro_code":0}
     http_version: 
   recorded_at: Mon, 07 Dec 2015 15:01:13 GMT
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/242578cd76b3aba9/conditions/q/Massachusetts/Boston.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.wunderground.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/2.2.15 (CentOS)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Creationtime:
+      - '0.083'
+      Last-Modified:
+      - Thu, 10 Dec 2015 18:48:48 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Thu, 10 Dec 2015 18:48:48 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Thu, 10 Dec 2015 18:48:48 GMT
+      Content-Length:
+      - '2671'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - DT=1449773328:4200:365-dell-a2; path=/; expires=Fri, 01-Jan-2020 00:00:00
+        GMT; domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"conditions\": 1\n  }\n\t}\n  ,\t\"current_observation\":
+        {\n\t\t\"image\": {\n\t\t\"url\":\"http://icons.wxug.com/graphics/wu2/logo_130x80.png\",\n\t\t\"title\":\"Weather
+        Underground\",\n\t\t\"link\":\"http://www.wunderground.com\"\n\t\t},\n\t\t\"display_location\":
+        {\n\t\t\"full\":\"Boston, MA\",\n\t\t\"city\":\"Boston\",\n\t\t\"state\":\"MA\",\n\t\t\"state_name\":\"Massachusetts\",\n\t\t\"country\":\"US\",\n\t\t\"country_iso3166\":\"US\",\n\t\t\"zip\":\"02101\",\n\t\t\"magic\":\"1\",\n\t\t\"wmo\":\"99999\",\n\t\t\"latitude\":\"42.37046814\",\n\t\t\"longitude\":\"-71.02747345\",\n\t\t\"elevation\":\"6.00000000\"\n\t\t},\n\t\t\"observation_location\":
+        {\n\t\t\"full\":\"North End waterfront Boston, Boston, Massachusetts\",\n\t\t\"city\":\"North
+        End waterfront Boston, Boston\",\n\t\t\"state\":\"Massachusetts\",\n\t\t\"country\":\"US\",\n\t\t\"country_iso3166\":\"US\",\n\t\t\"latitude\":\"42.365311\",\n\t\t\"longitude\":\"-71.051521\",\n\t\t\"elevation\":\"39
+        ft\"\n\t\t},\n\t\t\"estimated\": {\n\t\t},\n\t\t\"station_id\":\"KMABOSTO124\",\n\t\t\"observation_time\":\"Last
+        Updated on December 10, 1:48 PM EST\",\n\t\t\"observation_time_rfc822\":\"Thu,
+        10 Dec 2015 13:48:35 -0500\",\n\t\t\"observation_epoch\":\"1449773315\",\n\t\t\"local_time_rfc822\":\"Thu,
+        10 Dec 2015 13:48:48 -0500\",\n\t\t\"local_epoch\":\"1449773328\",\n\t\t\"local_tz_short\":\"EST\",\n\t\t\"local_tz_long\":\"America/New_York\",\n\t\t\"local_tz_offset\":\"-0500\",\n\t\t\"weather\":\"Mostly
+        Cloudy\",\n\t\t\"temperature_string\":\"56.7 F (13.7 C)\",\n\t\t\"temp_f\":56.7,\n\t\t\"temp_c\":13.7,\n\t\t\"relative_humidity\":\"74%\",\n\t\t\"wind_string\":\"From
+        the SSW at 2.0 MPH Gusting to 2.5 MPH\",\n\t\t\"wind_dir\":\"SSW\",\n\t\t\"wind_degrees\":203,\n\t\t\"wind_mph\":2.0,\n\t\t\"wind_gust_mph\":\"2.5\",\n\t\t\"wind_kph\":3.2,\n\t\t\"wind_gust_kph\":\"4.0\",\n\t\t\"pressure_mb\":\"1014\",\n\t\t\"pressure_in\":\"29.94\",\n\t\t\"pressure_trend\":\"-\",\n\t\t\"dewpoint_string\":\"49
+        F (9 C)\",\n\t\t\"dewpoint_f\":49,\n\t\t\"dewpoint_c\":9,\n\t\t\"heat_index_string\":\"NA\",\n\t\t\"heat_index_f\":\"NA\",\n\t\t\"heat_index_c\":\"NA\",\n\t\t\"windchill_string\":\"NA\",\n\t\t\"windchill_f\":\"NA\",\n\t\t\"windchill_c\":\"NA\",\n\t\t\"feelslike_string\":\"56.7
+        F (13.7 C)\",\n\t\t\"feelslike_f\":\"56.7\",\n\t\t\"feelslike_c\":\"13.7\",\n\t\t\"visibility_mi\":\"10.0\",\n\t\t\"visibility_km\":\"16.1\",\n\t\t\"solarradiation\":\"92\",\n\t\t\"UV\":\"1.0\",\"precip_1hr_string\":\"0.00
+        in ( 0 mm)\",\n\t\t\"precip_1hr_in\":\"0.00\",\n\t\t\"precip_1hr_metric\":\"
+        0\",\n\t\t\"precip_today_string\":\"0.00 in (0 mm)\",\n\t\t\"precip_today_in\":\"0.00\",\n\t\t\"precip_today_metric\":\"0\",\n\t\t\"icon\":\"mostlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/mostlycloudy.gif\",\n\t\t\"forecast_url\":\"http://www.wunderground.com/US/MA/Boston.html\",\n\t\t\"history_url\":\"http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KMABOSTO124\",\n\t\t\"ob_url\":\"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=42.365311,-71.051521\",\n\t\t\"nowcast\":\"\"\n\t}\n}\n"
+    http_version: 
+  recorded_at: Thu, 10 Dec 2015 18:48:48 GMT
+- request:
+    method: get
+    uri: http://api.nytimes.com/svc/topstories/v1/home.json?api-key=96d62255e379d3e94c5a9f1deec973c3:7:60415198
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.nytimes.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - prod-j-worker-atl-03.mashery.com
+      X-Amz-Id-2:
+      - IwV+2v2r4qLJPdHnRPDUoPpSdT43OTitJqY8+bn35LcRwkCLxE2Jg77GjL/E6i86zez3t7DKQN0=
+      X-Amz-Request-Id:
+      - A6131E1F161A2E3A
+      Date:
+      - Thu, 10 Dec 2015 18:48:50 GMT
+      Last-Modified:
+      - Thu, 10 Dec 2015 18:45:20 GMT
+      Etag:
+      - '"0dda38dcf324bdb672c0bcf143706df6"'
+      Accept-Ranges:
+      - none
+      Content-Type:
+      - text/json
+      Content-Length:
+      - '57957'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","copyright":"Copyright (c) 2015 The New York Times Company.
+        All Rights Reserved.","section":"home","last_updated":"2015-12-10T13:45:02-05:00","num_results":24,"results":[{"section":"U.S.","subsection":"Politics","title":"Trump\u2019s
+        Lead Solidifies in Poll, but Many Are Nervous","abstract":"Donald J. Trump
+        commands the support of 35 percent of Republican primary voters in a Times\/CBS
+        News poll taken largely before his latest comments about Muslims, but nearly
+        two-thirds of American voters say his candidacy concerns or frightens them.","url":"http:\/\/www.nytimes.com\/politics\/first-draft\/2015\/12\/10\/trump-solidifies-his-lead-but-leaves-many-nervous\/","byline":"By
+        MEGAN THEE-BRENAN","item_type":"Blogpost","updated_date":"2015-12-10T07:00:23-5:00","created_date":"2015-12-10T07:02:44-5:00","published_date":"2015-12-10T07:00:22-5:00","material_type_facet":"News","kicker":"First
+        Draft","des_facet":"","org_facet":"","per_facet":"","geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/09\/us\/09firstdraftnl-poll\/09firstdraftnl-poll-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"A
+        supporter at a Trump rally in Raleigh, N.C., last week.","copyright":"Ray
+        Whitehouse for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/09\/us\/09firstdraftnl-poll\/09firstdraftnl-poll-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"A
+        supporter at a Trump rally in Raleigh, N.C., last week.","copyright":"Ray
+        Whitehouse for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/09\/us\/09firstdraftnl-poll\/09firstdraftnl-poll-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"A
+        supporter at a Trump rally in Raleigh, N.C., last week.","copyright":"Ray
+        Whitehouse for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/09\/us\/09firstdraftnl-poll\/09firstdraftnl-poll-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"A
+        supporter at a Trump rally in Raleigh, N.C., last week.","copyright":"Ray
+        Whitehouse for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/09\/us\/09firstdraftnl-poll\/09firstdraftnl-poll-superJumbo.jpg","format":"superJumbo","height":1365,"width":2048,"type":"image","subtype":"photo","caption":"A
+        supporter at a Trump rally in Raleigh, N.C., last week.","copyright":"Ray
+        Whitehouse for The New York Times"}]},{"section":"U.S.","subsection":"Politics","title":"In
+        Private, Cruz Questions Trump\u2019s \u2018Judgment\u2019 to Be President","abstract":"Senator
+        Ted Cruz has positioned himself to be the beneficiary of any erosion of support
+        for Donald J. Trump, and among all the Republican presidential candidates
+        has, until now, taken pains not to offer much criticism about the billionaire
+        businessman.","url":"http:\/\/www.nytimes.com\/politics\/first-draft\/2015\/12\/10\/ted-cruz-questions-donald-trumps-judgment-to-be-president\/","byline":"By
+        MAGGIE HABERMAN and MATT FLEGENHEIMER","item_type":"Blogpost","updated_date":"2015-12-10T12:58:21-5:00","created_date":"2015-12-10T09:49:10-5:00","published_date":"2015-12-10T09:46:37-5:00","material_type_facet":"News","kicker":"First
+        Draft","des_facet":"","org_facet":"","per_facet":"","geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/us\/11cruz1_firstdraft\/11cruz1_firstdraft-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Senator
+        Ted Cruz among supporters at a town hall-style campaign event in Greenville,
+        S.C., on Monday.","copyright":"Erik S. Lesser\/European Pressphoto Agency"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/us\/11cruz1_firstdraft\/11cruz1_firstdraft-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Senator
+        Ted Cruz among supporters at a town hall-style campaign event in Greenville,
+        S.C., on Monday.","copyright":"Erik S. Lesser\/European Pressphoto Agency"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/us\/11cruz1_firstdraft\/11cruz1_firstdraft-articleInline-v2.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"Senator
+        Ted Cruz among supporters at a town hall-style campaign event in Greenville,
+        S.C., on Monday.","copyright":"Erik S. Lesser\/European Pressphoto Agency"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/us\/11cruz1_firstdraft\/11cruz1_firstdraft-mediumThreeByTwo210-v2.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Senator
+        Ted Cruz among supporters at a town hall-style campaign event in Greenville,
+        S.C., on Monday.","copyright":"Erik S. Lesser\/European Pressphoto Agency"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/us\/11cruz1_firstdraft\/11cruz1_firstdraft-superJumbo-v2.jpg","format":"superJumbo","height":1365,"width":2048,"type":"image","subtype":"photo","caption":"Senator
+        Ted Cruz among supporters at a town hall-style campaign event in Greenville,
+        S.C., on Monday.","copyright":"Erik S. Lesser\/European Pressphoto Agency"}]},{"section":"U.S.","subsection":"Politics","title":"Trump
+        Puts Off Netanyahu Meeting in Israel","abstract":"The change of travel plans
+        comes as Donald J. Trump, the Republican presidential candidate, has created
+        an international firestorm, including in Israel, with his proposal to bar
+        Muslims from entering the United States.","url":"http:\/\/www.nytimes.com\/politics\/first-draft\/2015\/12\/10\/donald-trump-puts-off-israel-trip-and-meeting-with-benjamin-netanyahu\/","byline":"By
+        ALAN RAPPEPORT and JODI RUDOREN","item_type":"Blogpost","updated_date":"2015-12-10T13:02:33-5:00","created_date":"2015-12-10T08:04:29-5:00","published_date":"2015-12-10T08:03:56-5:00","material_type_facet":"News","kicker":"First
+        Draft","des_facet":"","org_facet":"","per_facet":"","geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/us\/10firstdraft-trump1\/10firstdraft-trump1-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Donald
+        J. Trump spoke to guests gathered for a campaign event at the Mississippi
+        Valley Fairgrounds in Davenport, Iowa, on Dec. 5.","copyright":"Scott Olson\/Getty
+        Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/us\/10firstdraft-trump1\/10firstdraft-trump1-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Donald
+        J. Trump spoke to guests gathered for a campaign event at the Mississippi
+        Valley Fairgrounds in Davenport, Iowa, on Dec. 5.","copyright":"Scott Olson\/Getty
+        Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/us\/10firstdraft-trump1\/10firstdraft-trump1-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"Donald
+        J. Trump spoke to guests gathered for a campaign event at the Mississippi
+        Valley Fairgrounds in Davenport, Iowa, on Dec. 5.","copyright":"Scott Olson\/Getty
+        Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/us\/10firstdraft-trump1\/10firstdraft-trump1-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Donald
+        J. Trump spoke to guests gathered for a campaign event at the Mississippi
+        Valley Fairgrounds in Davenport, Iowa, on Dec. 5.","copyright":"Scott Olson\/Getty
+        Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/us\/10firstdraft-trump1\/10firstdraft-trump1-superJumbo.jpg","format":"superJumbo","height":1365,"width":2048,"type":"image","subtype":"photo","caption":"Donald
+        J. Trump spoke to guests gathered for a campaign event at the Mississippi
+        Valley Fairgrounds in Davenport, Iowa, on Dec. 5.","copyright":"Scott Olson\/Getty
+        Images"}]},{"section":"U.S.","subsection":"Politics","title":"As It Fights
+        ISIS, Pentagon Seeks Bases Overseas","abstract":"The plan proposed to the
+        White House would build up a string of military bases in Africa, Southwest
+        Asia and the Middle East that could be used to collect intelligence and carry
+        out strikes against the Islamic State.","url":"http:\/\/www.nytimes.com\/2015\/12\/11\/us\/politics\/pentagon-seeks-string-of-overseas-bases-to-contain-isis.html","byline":"By
+        MARK MAZZETTI and ERIC SCHMITT","item_type":"Article","updated_date":"2015-12-10T05:00:04-5:00","created_date":"2015-12-10T05:00:12-5:00","published_date":"2015-12-11T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["United
+        States Defense and Military Forces","Terrorism","Classified Information and
+        State Secrets","Military Bases and Installations"],"org_facet":["Islamic State
+        in Iraq and Syria (ISIS)","Defense Department","Al Qaeda","Boko Haram"],"per_facet":"","geo_facet":["Africa","Central
+        Asia","Yemen","Middle East"],"multimedia":""},{"section":"U.S.","subsection":"Politics","title":"A
+        Congress That Doesn&#8217;t Want to Weigh In on War","abstract":"As President
+        Obama takes military action in Syria, Congress is refusing to do what many
+        lawmakers believe is its obligation: Debate the meaning of war and vote on
+        whether to authorize it.","url":"http:\/\/www.nytimes.com\/2015\/12\/10\/us\/politics\/a-congress-that-doesnt-want-to-weigh-in-on-war.html","byline":"By
+        JENNIFER STEINHAUER","item_type":"Article","updated_date":"2015-12-09T22:02:14-5:00","created_date":"2015-12-09T22:02:21-5:00","published_date":"2015-12-10T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["United
+        States Defense and Military Forces","Terrorism","War and Emergency Powers
+        (US)","United States Politics and Government"],"org_facet":["Islamic State
+        in Iraq and Syria (ISIS)","House Committee on Armed Services","Congress"],"per_facet":["Ryan,
+        Paul D Jr","Obama, Barack","Kaine, Timothy M","Graham, Lindsey","Carter, Ashton
+        B"],"geo_facet":["United States"],"multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/us\/10force-web\/10force-web-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"President
+        Obama greeted Speaker Paul D. Ryan, center, and the Senate majority leader,
+        Mitch McConnell, at the Capitol on Wednesday after a ceremony commemorating
+        the 150th anniversary of the 13th Amendment.","copyright":"Doug Mills\/The
+        New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/us\/10force-web\/10force-web-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"President
+        Obama greeted Speaker Paul D. Ryan, center, and the Senate majority leader,
+        Mitch McConnell, at the Capitol on Wednesday after a ceremony commemorating
+        the 150th anniversary of the 13th Amendment.","copyright":"Doug Mills\/The
+        New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/us\/10force-web\/10force-web-articleInline.jpg","format":"Normal","height":131,"width":190,"type":"image","subtype":"photo","caption":"President
+        Obama greeted Speaker Paul D. Ryan, center, and the Senate majority leader,
+        Mitch McConnell, at the Capitol on Wednesday after a ceremony commemorating
+        the 150th anniversary of the 13th Amendment.","copyright":"Doug Mills\/The
+        New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/us\/10force-web\/10force-web-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"President
+        Obama greeted Speaker Paul D. Ryan, center, and the Senate majority leader,
+        Mitch McConnell, at the Capitol on Wednesday after a ceremony commemorating
+        the 150th anniversary of the 13th Amendment.","copyright":"Doug Mills\/The
+        New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/us\/10force-web\/10force-web-superJumbo.jpg","format":"superJumbo","height":1411,"width":2048,"type":"image","subtype":"photo","caption":"President
+        Obama greeted Speaker Paul D. Ryan, center, and the Senate majority leader,
+        Mitch McConnell, at the Capitol on Wednesday after a ceremony commemorating
+        the 150th anniversary of the 13th Amendment.","copyright":"Doug Mills\/The
+        New York Times"}]},{"section":"U.S.","subsection":"","title":"California Couple
+        Spoke of Attack in 2013, F.B.I. Says","abstract":"New information suggests
+        that Syed Rizwan Farook and his wife, Tashfeen Malik, were considering violent
+        action even before the Islamic State rose to prominence.","url":"http:\/\/www.nytimes.com\/2015\/12\/10\/us\/san-bernardino-massacre-fbi.html","byline":"By
+        MICHAEL S. SCHMIDT and SALMAN MASOOD","item_type":"Article","updated_date":"2015-12-09T21:10:43-5:00","created_date":"2015-12-09T11:18:34-5:00","published_date":"2015-12-10T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["San
+        Bernardino, Calif, Shooting (2015)","Terrorism"],"org_facet":["Islamic State
+        in Iraq and Syria (ISIS)","Federal Bureau of Investigation"],"per_facet":["Farook,
+        Syed Rizwan","Malik, Tashfeen","Comey, James B","Marquez, Enrique (1991- )"],"geo_facet":"","multimedia":""},{"section":"U.S.","subsection":"","title":"Infants
+        Given Psychiatric Drugs Without Testing","abstract":"Many doctors worry that
+        these drugs are used despite no published research into their effectiveness
+        and potential risks for children so young.","url":"http:\/\/www.nytimes.com\/2015\/12\/11\/us\/psychiatric-drugs-are-being-prescribed-to-infants.html","byline":"By
+        ALAN SCHWARZ","item_type":"Article","updated_date":"2015-12-10T11:03:33-5:00","created_date":"2015-12-10T11:03:40-5:00","published_date":"2015-12-11T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Seizures
+        (Medical)","Children and Childhood","Drugs (Pharmaceuticals)","Mental Health
+        and Disorders","Depression (Mental)","Epilepsy","Psychiatry and Psychiatrists","Antidepressants","Doctors","Bipolar
+        Disorder","Attention Deficit Hyperactivity Disorder"],"org_facet":["American
+        Academy of Pediatrics"],"per_facet":"","geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/09\/us\/10babymedsweb5\/10babymedsweb5-thumbStandard-v2.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Andrew
+        Rios, 4, took the antipsychotic Risperdal when he was 18 months old to treat
+        severe aggression.","copyright":"Jenna Schoenefeld for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/09\/us\/10babymedsweb5\/10babymedsweb5-thumbLarge-v2.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Andrew
+        Rios, 4, took the antipsychotic Risperdal when he was 18 months old to treat
+        severe aggression.","copyright":"Jenna Schoenefeld for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/09\/us\/10babymedsweb5\/10babymedsweb5-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"Andrew
+        Rios, 4, took the antipsychotic Risperdal when he was 18 months old to treat
+        severe aggression.","copyright":"Jenna Schoenefeld for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/09\/us\/10babymedsweb5\/10babymedsweb5-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Andrew
+        Rios, 4, took the antipsychotic Risperdal when he was 18 months old to treat
+        severe aggression.","copyright":"Jenna Schoenefeld for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/09\/us\/10babymedsweb5\/10babymedsweb5-superJumbo.jpg","format":"superJumbo","height":1365,"width":2048,"type":"image","subtype":"photo","caption":"Andrew
+        Rios, 4, took the antipsychotic Risperdal when he was 18 months old to treat
+        severe aggression.","copyright":"Jenna Schoenefeld for The New York Times"}]},{"section":"Business
+        Day","subsection":"International Business","title":"VW Says Emissions Cheating
+        Was Not a One-Time Error","abstract":"Volkswagen said that its emissions cheating
+        scandal began in 2005 with a decision to heavily promote diesel engines in
+        the United States and a realization that they could not meet clean air standards.","url":"http:\/\/www.nytimes.com\/2015\/12\/11\/business\/international\/vw-emissions-scandal.html","byline":"By
+        JACK EWING","item_type":"Article","updated_date":"2015-12-10T09:47:36-5:00","created_date":"2015-12-10T05:30:55-5:00","published_date":"2015-12-11T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Fuel
+        Emissions (Transportation)","Greenhouse Gas Emissions","Automobiles","Ethics
+        and Official Misconduct"],"org_facet":["Environmental Protection Agency","Volkswagen
+        AG"],"per_facet":"","geo_facet":["Germany","United States","Wolfsburg (Germany)"],"multimedia":""},{"section":"Movies","subsection":"","title":"The
+        Best Movies of 2015","abstract":"The film critics of The New York Times \u2014
+        Manohla Dargis, A. O. Scott and Stephen Holden \u2014 share their picks for
+        the best movies of the year.","url":"http:\/\/www.nytimes.com\/2015\/12\/13\/movies\/best-movies-2015.html","byline":"","item_type":"Article","updated_date":"2015-12-09T13:28:53-5:00","created_date":"2015-12-09T13:29:01-5:00","published_date":"2015-12-13T00:00:00-5:00","material_type_facet":"List","kicker":"","des_facet":["Movies"],"org_facet":"","per_facet":"","geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/13\/movies\/13BESTMOVIES\/13BESTMOVIES-thumbStandard-v4.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Clockwise
+        from top left: \u201cThe Martian,\u201d \u201cCarol,\u201d \u201cMad Max:
+        Fury Road,\u201d \u201cBridge of Spies,\u201d \u201cInside Out\u201d and \u201cThe
+        Big Short.\u201d","copyright":"Clockwise from top left: Aidan Monaghan\/Twentieth
+        Century Fox Film; Wilson Webb\/The Weinstein Company; Jasin Boland\/Warner
+        Bros. Pictures; Jaap Buitendijk\/DreamWorks and Twentieth Century Fox Film;
+        Disney\/Pixar; Jaap Buitendijk\/Paramount Pictures"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/13\/movies\/13BESTMOVIES\/13BESTMOVIES-thumbLarge-v4.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Clockwise
+        from top left: \u201cThe Martian,\u201d \u201cCarol,\u201d \u201cMad Max:
+        Fury Road,\u201d \u201cBridge of Spies,\u201d \u201cInside Out\u201d and \u201cThe
+        Big Short.\u201d","copyright":"Clockwise from top left: Aidan Monaghan\/Twentieth
+        Century Fox Film; Wilson Webb\/The Weinstein Company; Jasin Boland\/Warner
+        Bros. Pictures; Jaap Buitendijk\/DreamWorks and Twentieth Century Fox Film;
+        Disney\/Pixar; Jaap Buitendijk\/Paramount Pictures"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/13\/movies\/13BESTMOVIES\/13BESTMOVIES-articleInline-v3.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"Clockwise
+        from top left: \u201cThe Martian,\u201d \u201cCarol,\u201d \u201cMad Max:
+        Fury Road,\u201d \u201cBridge of Spies,\u201d \u201cInside Out\u201d and \u201cThe
+        Big Short.\u201d","copyright":"Clockwise from top left: Aidan Monaghan\/Twentieth
+        Century Fox Film; Wilson Webb\/The Weinstein Company; Jasin Boland\/Warner
+        Bros. Pictures; Jaap Buitendijk\/DreamWorks and Twentieth Century Fox Film;
+        Disney\/Pixar; Jaap Buitendijk\/Paramount Pictures"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/13\/movies\/13BESTMOVIES\/13BESTMOVIES-mediumThreeByTwo210-v3.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Clockwise
+        from top left: \u201cThe Martian,\u201d \u201cCarol,\u201d \u201cMad Max:
+        Fury Road,\u201d \u201cBridge of Spies,\u201d \u201cInside Out\u201d and \u201cThe
+        Big Short.\u201d","copyright":"Clockwise from top left: Aidan Monaghan\/Twentieth
+        Century Fox Film; Wilson Webb\/The Weinstein Company; Jasin Boland\/Warner
+        Bros. Pictures; Jaap Buitendijk\/DreamWorks and Twentieth Century Fox Film;
+        Disney\/Pixar; Jaap Buitendijk\/Paramount Pictures"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/13\/movies\/13BESTMOVIES\/13BESTMOVIES-superJumbo-v3.jpg","format":"superJumbo","height":1365,"width":2048,"type":"image","subtype":"photo","caption":"Clockwise
+        from top left: \u201cThe Martian,\u201d \u201cCarol,\u201d \u201cMad Max:
+        Fury Road,\u201d \u201cBridge of Spies,\u201d \u201cInside Out\u201d and \u201cThe
+        Big Short.\u201d","copyright":"Clockwise from top left: Aidan Monaghan\/Twentieth
+        Century Fox Film; Wilson Webb\/The Weinstein Company; Jasin Boland\/Warner
+        Bros. Pictures; Jaap Buitendijk\/DreamWorks and Twentieth Century Fox Film;
+        Disney\/Pixar; Jaap Buitendijk\/Paramount Pictures"}]},{"section":"Movies","subsection":"","title":"\u2018Carol\u2019
+        and \u2018Big Short\u2019 Are Top Golden Globe Nominees","abstract":"\u201cThe
+        Revenant,\u201d \u201cSpotlight,\u201d \u201cThe Martian\u201d and \u201cJoy\u201d
+        also made good showings in the Hollywood Foreign Press nominations.","url":"http:\/\/www.nytimes.com\/2015\/12\/11\/movies\/golden-globes-2016-nominations.html","byline":"MICHAEL
+        CIEPLY and BROOKS BARNES","item_type":"Article","updated_date":"2015-12-10T10:38:13-5:00","created_date":"2015-12-10T08:56:07-5:00","published_date":"2015-12-11T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Movies","Spotlight
+        (Movie)","The Martian (Movie)"],"org_facet":["Golden Globes","Academy of Motion
+        Picture Arts and Sciences"],"per_facet":"","geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/arts\/11carol1_hp\/11carol1_hp-thumbStandard-v2.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Cate
+        Blanchett as Carol Aird in a scene from \u201cCarol.\u201d","copyright":"Wilson
+        Webb\/The Weinstein Company, via Associated Press"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/arts\/11carol1_hp\/11carol1_hp-thumbLarge-v2.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Cate
+        Blanchett as Carol Aird in a scene from \u201cCarol.\u201d","copyright":"Wilson
+        Webb\/The Weinstein Company, via Associated Press"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/arts\/11carol1_hp\/11carol1_hp-articleInline.jpg","format":"Normal","height":130,"width":190,"type":"image","subtype":"photo","caption":"Cate
+        Blanchett as Carol Aird in a scene from \u201cCarol.\u201d","copyright":"Wilson
+        Webb\/The Weinstein Company, via Associated Press"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/arts\/11carol1_hp\/11carol1_hp-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Cate
+        Blanchett as Carol Aird in a scene from \u201cCarol.\u201d","copyright":"Wilson
+        Webb\/The Weinstein Company, via Associated Press"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/arts\/11carol1_hp\/11carol1_hp-superJumbo.jpg","format":"superJumbo","height":1363,"width":2048,"type":"image","subtype":"photo","caption":"Cate
+        Blanchett as Carol Aird in a scene from \u201cCarol.\u201d","copyright":"Wilson
+        Webb\/The Weinstein Company, via Associated Press"}]},{"section":"Business
+        Day","subsection":"Media","title":"Focused on Bergdahl, New Season of \u2018Serial\u2019
+        Is Released","abstract":"In the premiere episode of the podcast\u2019s new
+        season, Sgt. Bowe Bergdahl recalls publicly, for the first time, the night
+        he walked away from his Army post in Afghanistan.","url":"http:\/\/www.nytimes.com\/2015\/12\/11\/business\/media\/serial-season-2-bowe-bergdahl-recalls-his-afghan-odyssey.html","byline":"By
+        RICHARD A. OPPEL Jr. and JOHN KOBLIN","item_type":"Article","updated_date":"2015-12-10T11:58:20-5:00","created_date":"2015-12-10T06:00:19-5:00","published_date":"2015-12-11T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Serial
+        (Radio Program)","Podcasts","Afghanistan War (2001-14)"],"org_facet":"","per_facet":["Bergdahl,
+        Bowe R"],"geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/arts\/SERIAL2\/SERIAL2-thumbStandard-v5.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Sgt.
+        Bowe Bergdahl in an undated photograph from the United States Army.","copyright":"U.S.
+        Army, via Reuters"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/arts\/SERIAL2\/SERIAL2-thumbLarge-v5.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Sgt.
+        Bowe Bergdahl in an undated photograph from the United States Army.","copyright":"U.S.
+        Army, via Reuters"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/arts\/SERIAL2\/SERIAL2-articleInline-v5.jpg","format":"Normal","height":172,"width":190,"type":"image","subtype":"photo","caption":"Sgt.
+        Bowe Bergdahl in an undated photograph from the United States Army.","copyright":"U.S.
+        Army, via Reuters"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/arts\/SERIAL2\/SERIAL2-mediumThreeByTwo210-v5.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Sgt.
+        Bowe Bergdahl in an undated photograph from the United States Army.","copyright":"U.S.
+        Army, via Reuters"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/arts\/SERIAL2\/SERIAL2-superJumbo-v5.jpg","format":"superJumbo","height":904,"width":1000,"type":"image","subtype":"photo","caption":"Sgt.
+        Bowe Bergdahl in an undated photograph from the United States Army.","copyright":"U.S.
+        Army, via Reuters"}]},{"section":"U.S.","subsection":"Politics","title":"Obama\u2019s
+        Handling of Bergdahl Exchange Is Denounced","abstract":"A report by the House
+        Armed Services Committee\u2019s Republican members is critical of a deal in
+        which five Taliban detainees were swapped for Sgt. Bowe Bergdahl.","url":"http:\/\/www.nytimes.com\/2015\/12\/10\/us\/politics\/house-republicans-denounce-obamas-handling-of-prisoner-exchange.html","byline":"By
+        CHARLIE SAVAGE","item_type":"Article","updated_date":"2015-12-09T17:59:24-5:00","created_date":"2015-12-09T17:59:26-5:00","published_date":"2015-12-10T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Afghanistan
+        War (2001-14)","Prisoners of War","Detainees","United States Politics and
+        Government","United States Defense and Military Forces","United States International
+        Relations"],"org_facet":["Taliban","Defense Department"],"per_facet":["Bergdahl,
+        Bowe R","Obama, Barack"],"geo_facet":["Guantanamo Bay Naval Base (Cuba)"],"multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/us\/10gitmo-web\/10gitmo-web-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Mohammad
+        Nabi Omari, one of the Taliban militants exchanged for Sgt. Bowe Bergdahl,
+        in Qatar in June 2014.","copyright":"Nunn.Asia\/Agence France-Presse \u2014
+        Getty Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/us\/10gitmo-web\/10gitmo-web-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Mohammad
+        Nabi Omari, one of the Taliban militants exchanged for Sgt. Bowe Bergdahl,
+        in Qatar in June 2014.","copyright":"Nunn.Asia\/Agence France-Presse \u2014
+        Getty Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/us\/10gitmo-web\/10gitmo-web-articleInline.jpg","format":"Normal","height":129,"width":190,"type":"image","subtype":"photo","caption":"Mohammad
+        Nabi Omari, one of the Taliban militants exchanged for Sgt. Bowe Bergdahl,
+        in Qatar in June 2014.","copyright":"Nunn.Asia\/Agence France-Presse \u2014
+        Getty Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/us\/10gitmo-web\/10gitmo-web-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Mohammad
+        Nabi Omari, one of the Taliban militants exchanged for Sgt. Bowe Bergdahl,
+        in Qatar in June 2014.","copyright":"Nunn.Asia\/Agence France-Presse \u2014
+        Getty Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/us\/10gitmo-web\/10gitmo-web-superJumbo.jpg","format":"superJumbo","height":1387,"width":2048,"type":"image","subtype":"photo","caption":"Mohammad
+        Nabi Omari, one of the Taliban militants exchanged for Sgt. Bowe Bergdahl,
+        in Qatar in June 2014.","copyright":"Nunn.Asia\/Agence France-Presse \u2014
+        Getty Images"}]},{"section":"U.S.","subsection":"","title":"Q. and A.: The
+        Bergdahl Case","abstract":"An Army general overseeing the case is weighing
+        what charges should formally be brought against Sergeant Bergdahl and whether
+        he should face a court-martial and the possibility of a life sentence.","url":"http:\/\/www.nytimes.com\/2015\/12\/11\/us\/sgt-bowe-bergdahl-from-captivity-to-courtroom.html","byline":"By
+        RICHARD A. OPPEL Jr.","item_type":"Article","updated_date":"2015-12-10T06:02:51-5:00","created_date":"2015-12-10T06:02:53-5:00","published_date":"2015-12-11T00:00:00-5:00","material_type_facet":"Question","kicker":"","des_facet":["Afghanistan
+        War (2001-14)","Desertion (Military)","United States Defense and Military
+        Forces","Courts-Martial"],"org_facet":["Defense Department"],"per_facet":["Bergdahl,
+        Bowe R"],"geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2014\/06\/02\/us\/CAPTIVITY\/CAPTIVITY-thumbStandard-v3.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"In
+        Hailey, Idaho, Sgt. Bowe Bergdahl\u2019s hometown, Diane Walker took a picture
+        of a sign celebrating his release by the Taliban.","copyright":"Kyle Green\/The
+        Idaho Statesman, via Associated Press"},{"url":"http:\/\/static01.nyt.com\/images\/2014\/06\/02\/us\/CAPTIVITY\/CAPTIVITY-thumbLarge-v3.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"In
+        Hailey, Idaho, Sgt. Bowe Bergdahl\u2019s hometown, Diane Walker took a picture
+        of a sign celebrating his release by the Taliban.","copyright":"Kyle Green\/The
+        Idaho Statesman, via Associated Press"},{"url":"http:\/\/static01.nyt.com\/images\/2014\/06\/02\/us\/CAPTIVITY\/CAPTIVITY-articleInline-v3.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"In
+        Hailey, Idaho, Sgt. Bowe Bergdahl\u2019s hometown, Diane Walker took a picture
+        of a sign celebrating his release by the Taliban.","copyright":"Kyle Green\/The
+        Idaho Statesman, via Associated Press"},{"url":"http:\/\/static01.nyt.com\/images\/2014\/06\/02\/us\/CAPTIVITY\/CAPTIVITY-mediumThreeByTwo210-v3.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"In
+        Hailey, Idaho, Sgt. Bowe Bergdahl\u2019s hometown, Diane Walker took a picture
+        of a sign celebrating his release by the Taliban.","copyright":"Kyle Green\/The
+        Idaho Statesman, via Associated Press"},{"url":"http:\/\/static01.nyt.com\/images\/2014\/06\/02\/us\/CAPTIVITY\/CAPTIVITY-superJumbo-v3.jpg","format":"superJumbo","height":1365,"width":2048,"type":"image","subtype":"photo","caption":"In
+        Hailey, Idaho, Sgt. Bowe Bergdahl\u2019s hometown, Diane Walker took a picture
+        of a sign celebrating his release by the Taliban.","copyright":"Kyle Green\/The
+        Idaho Statesman, via Associated Press"}]},{"section":"N.Y. \/ Region","subsection":"","title":"Attacked
+        on Affordable Housing, de Blasio Fights Back","abstract":"A signature issue
+        for Mayor Bill deBlasio has drawn opposition from the middle- and working-class
+        communities it is meant to help.","url":"http:\/\/www.nytimes.com\/2015\/12\/11\/nyregion\/mayor-de-blasio-seeks-to-rebuild-momentum-for-affordable-housing-plan.html","byline":"By
+        MICHAEL M. GRYNBAUM and MIREYA NAVARRO","item_type":"Article","updated_date":"2015-12-10T10:41:23-5:00","created_date":"2015-12-10T10:41:25-5:00","published_date":"2015-12-11T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Real
+        Estate and Housing (Residential)","Affordable Housing","Zoning"],"org_facet":["City
+        Planning Commission (NYC)"],"per_facet":["de Blasio, Bill"],"geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/13\/nyregion\/REZONINGweb1\/REZONINGweb1-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Mayor
+        Bill de Blasio greeted Marie Louise Jacques and her 10-year-old daughter,
+        Michaelle Louise Jacques, in February after a news conference in Brooklyn
+        at which he said he would prioritize affordable housing.","copyright":"Yana
+        Paskova for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/13\/nyregion\/REZONINGweb1\/REZONINGweb1-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Mayor
+        Bill de Blasio greeted Marie Louise Jacques and her 10-year-old daughter,
+        Michaelle Louise Jacques, in February after a news conference in Brooklyn
+        at which he said he would prioritize affordable housing.","copyright":"Yana
+        Paskova for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/13\/nyregion\/REZONINGweb1\/REZONINGweb1-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"Mayor
+        Bill de Blasio greeted Marie Louise Jacques and her 10-year-old daughter,
+        Michaelle Louise Jacques, in February after a news conference in Brooklyn
+        at which he said he would prioritize affordable housing.","copyright":"Yana
+        Paskova for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/13\/nyregion\/REZONINGweb1\/REZONINGweb1-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Mayor
+        Bill de Blasio greeted Marie Louise Jacques and her 10-year-old daughter,
+        Michaelle Louise Jacques, in February after a news conference in Brooklyn
+        at which he said he would prioritize affordable housing.","copyright":"Yana
+        Paskova for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/13\/nyregion\/REZONINGweb1\/REZONINGweb1-superJumbo.jpg","format":"superJumbo","height":1369,"width":2048,"type":"image","subtype":"photo","caption":"Mayor
+        Bill de Blasio greeted Marie Louise Jacques and her 10-year-old daughter,
+        Michaelle Louise Jacques, in February after a news conference in Brooklyn
+        at which he said he would prioritize affordable housing.","copyright":"Yana
+        Paskova for The New York Times"}]},{"section":"Science","subsection":"","title":"Finding
+        a Few Billion Dollars to Save the Forests","abstract":"If a climate deal is
+        reached, nations \u2014 particularly tropical countries \u2014 would agree
+        to sharp reductions in deforestation.","url":"http:\/\/www.nytimes.com\/2015\/12\/11\/world\/delegates-at-climate-talks-focus-on-saving-the-worlds-forests.html","byline":"By
+        JUSTIN GILLIS","item_type":"Article","updated_date":"2015-12-10T05:00:19-5:00","created_date":"2015-12-10T05:00:26-5:00","published_date":"2015-12-11T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Forests
+        and Forestry","Greenhouse Gas Emissions","United Nations Framework Convention
+        on Climate Change","Land Use Policies"],"org_facet":["Rainforest Action Network","Walt
+        Disney Company"],"per_facet":"","geo_facet":["Brazil"],"multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/science\/11FOREST1\/11FOREST1-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"The
+        canopy of the forest in Puerto Viejo, Costa Rica, in October 2014. Climate
+        change negotiations in Paris could lead to a sweeping effort to save the world''s
+        forests.","copyright":"Adriana Zehbrauskas for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/science\/11FOREST1\/11FOREST1-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"The
+        canopy of the forest in Puerto Viejo, Costa Rica, in October 2014. Climate
+        change negotiations in Paris could lead to a sweeping effort to save the world''s
+        forests.","copyright":"Adriana Zehbrauskas for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/science\/11FOREST1\/11FOREST1-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"The
+        canopy of the forest in Puerto Viejo, Costa Rica, in October 2014. Climate
+        change negotiations in Paris could lead to a sweeping effort to save the world''s
+        forests.","copyright":"Adriana Zehbrauskas for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/science\/11FOREST1\/11FOREST1-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"The
+        canopy of the forest in Puerto Viejo, Costa Rica, in October 2014. Climate
+        change negotiations in Paris could lead to a sweeping effort to save the world''s
+        forests.","copyright":"Adriana Zehbrauskas for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/science\/11FOREST1\/11FOREST1-superJumbo.jpg","format":"superJumbo","height":1365,"width":2048,"type":"image","subtype":"photo","caption":"The
+        canopy of the forest in Puerto Viejo, Costa Rica, in October 2014. Climate
+        change negotiations in Paris could lead to a sweeping effort to save the world''s
+        forests.","copyright":"Adriana Zehbrauskas for The New York Times"}]},{"section":"U.S.","subsection":"Politics","title":"Kerry
+        Finds Himself in Last-Minute Negotiations Again","abstract":"The secretary
+        of state, in Paris for the climate talks, finds himself for the second time
+        this year at the center of crucial negotiations on the international stage.","url":"http:\/\/www.nytimes.com\/2015\/12\/10\/us\/politics\/kerry-in-familiar-spot-trying-to-coax-deal-in-meetings-closing-days.html","byline":"By
+        CORAL DAVENPORT","item_type":"Article","updated_date":"2015-12-09T21:03:58-5:00","created_date":"2015-12-09T21:04:00-5:00","published_date":"2015-12-10T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["United
+        Nations Framework Convention on Climate Change","Global Warming","United States
+        Politics and Government","United States International Relations","Greenhouse
+        Gas Emissions"],"org_facet":"","per_facet":["Kerry, John"],"geo_facet":["United
+        States","China"],"multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/world\/10KERRY\/10KERRY-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Secretary
+        of State John Kerry, in Paris this week, said, \"If I weren\u2019t here I
+        would fault myself for not trying to talk to someone who could make the difference.\"","copyright":"Dmitry
+        Kostyukov for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/world\/10KERRY\/10KERRY-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Secretary
+        of State John Kerry, in Paris this week, said, \"If I weren\u2019t here I
+        would fault myself for not trying to talk to someone who could make the difference.\"","copyright":"Dmitry
+        Kostyukov for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/world\/10KERRY\/10KERRY-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"Secretary
+        of State John Kerry, in Paris this week, said, \"If I weren\u2019t here I
+        would fault myself for not trying to talk to someone who could make the difference.\"","copyright":"Dmitry
+        Kostyukov for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/world\/10KERRY\/10KERRY-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Secretary
+        of State John Kerry, in Paris this week, said, \"If I weren\u2019t here I
+        would fault myself for not trying to talk to someone who could make the difference.\"","copyright":"Dmitry
+        Kostyukov for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/world\/10KERRY\/10KERRY-superJumbo.jpg","format":"superJumbo","height":1367,"width":2048,"type":"image","subtype":"photo","caption":"Secretary
+        of State John Kerry, in Paris this week, said, \"If I weren\u2019t here I
+        would fault myself for not trying to talk to someone who could make the difference.\"","copyright":"Dmitry
+        Kostyukov for The New York Times"}]},{"section":"World","subsection":"Asia
+        Pacific","title":"Amid China\u2019s Smog Worries: Counterfeit Masks","abstract":"A
+        report said the Shanghai authorities had seized 120,000 counterfeit surgical
+        masks, the kind commonly worn to protect against polluted air.","url":"http:\/\/www.nytimes.com\/2015\/12\/11\/world\/asia\/china-smog-face-mask.html","byline":"By
+        VANESSA PIAO","item_type":"Article","updated_date":"2015-12-10T05:51:33-5:00","created_date":"2015-12-10T04:00:22-5:00","published_date":"2015-12-11T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Protective
+        Clothing and Gear","Masks","Counterfeit Merchandise","Air Pollution"],"org_facet":["3M
+        Company"],"per_facet":"","geo_facet":["China"],"multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/world\/11chinamasks02\/11chinamasks02-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"People
+        in Beijing wearing face masks on Wednesday. Such masks have become an increasingly
+        common sight in China in recent years.","copyright":"Kevin Frayer\/Getty Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/world\/11chinamasks02\/11chinamasks02-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"People
+        in Beijing wearing face masks on Wednesday. Such masks have become an increasingly
+        common sight in China in recent years.","copyright":"Kevin Frayer\/Getty Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/world\/11chinamasks02\/11chinamasks02-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"People
+        in Beijing wearing face masks on Wednesday. Such masks have become an increasingly
+        common sight in China in recent years.","copyright":"Kevin Frayer\/Getty Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/world\/11chinamasks02\/11chinamasks02-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"People
+        in Beijing wearing face masks on Wednesday. Such masks have become an increasingly
+        common sight in China in recent years.","copyright":"Kevin Frayer\/Getty Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/world\/11chinamasks02\/11chinamasks02-superJumbo.jpg","format":"superJumbo","height":1365,"width":2048,"type":"image","subtype":"photo","caption":"People
+        in Beijing wearing face masks on Wednesday. Such masks have become an increasingly
+        common sight in China in recent years.","copyright":"Kevin Frayer\/Getty Images"}]},{"section":"World","subsection":"Americas","title":"Predecessor
+        Snubs Argentine President\u2019s Swearing-In","abstract":"At the close of
+        an often-divisive presidency, Cristina Fern\u00e1ndez de Kirchner boycotted
+        the ceremony for Mauricio Macri after a bitter argument over how and where
+        to hold it.","url":"http:\/\/www.nytimes.com\/2015\/12\/11\/world\/americas\/argentina-president-mauricio-macri-sworn-in-snubbed-by-kirchner.html","byline":"By
+        JONATHAN GILBERT","item_type":"Article","updated_date":"2015-12-10T13:08:42-5:00","created_date":"2015-12-10T12:03:53-5:00","published_date":"2015-12-11T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Appointments
+        and Executive Changes","Boycotts"],"org_facet":"","per_facet":["Macri, Mauricio","Kirchner,
+        Cristina Fernandez de"],"geo_facet":["Argentina"],"multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/world\/11ARGENTINA\/11ARGENTINA-thumbStandard-v2.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Mauricio
+        Macri, the new Argentine president, arrived at the\u00a0congressional palace
+        in Buenos Aires for the formal swearing-in on Thursday.","copyright":"Alejandro
+        Pagni\/Agence France-Presse \u2014 Getty Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/world\/11ARGENTINA\/11ARGENTINA-thumbLarge-v2.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Mauricio
+        Macri, the new Argentine president, arrived at the\u00a0congressional palace
+        in Buenos Aires for the formal swearing-in on Thursday.","copyright":"Alejandro
+        Pagni\/Agence France-Presse \u2014 Getty Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/world\/11ARGENTINA\/11ARGENTINA-articleInline.jpg","format":"Normal","height":139,"width":190,"type":"image","subtype":"photo","caption":"Mauricio
+        Macri, the new Argentine president, arrived at the\u00a0congressional palace
+        in Buenos Aires for the formal swearing-in on Thursday.","copyright":"Alejandro
+        Pagni\/Agence France-Presse \u2014 Getty Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/world\/11ARGENTINA\/11ARGENTINA-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Mauricio
+        Macri, the new Argentine president, arrived at the\u00a0congressional palace
+        in Buenos Aires for the formal swearing-in on Thursday.","copyright":"Alejandro
+        Pagni\/Agence France-Presse \u2014 Getty Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/world\/11ARGENTINA\/11ARGENTINA-superJumbo.jpg","format":"superJumbo","height":1493,"width":2048,"type":"image","subtype":"photo","caption":"Mauricio
+        Macri, the new Argentine president, arrived at the\u00a0congressional palace
+        in Buenos Aires for the formal swearing-in on Thursday.","copyright":"Alejandro
+        Pagni\/Agence France-Presse \u2014 Getty Images"}]},{"section":"N.Y. \/ Region","subsection":"","title":"Jury
+        Begins Deliberations in Trial of Skelos and Son","abstract":"The jury will
+        consider eight counts of bribery, extortion and conspiracy in the trial of
+        Mr. Skelos, the former State Senate majority leader, and his son, Adam.","url":"http:\/\/www.nytimes.com\/2015\/12\/11\/nyregion\/dean-skelos-adam-skelos-corruption-trial.html","byline":"By
+        WILLIAM K. RASHBAUM","item_type":"Article","updated_date":"2015-12-10T12:32:20-5:00","created_date":"2015-12-10T12:32:22-5:00","published_date":"2015-12-11T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Bribery
+        and Kickbacks","Extortion and Blackmail"],"org_facet":"","per_facet":["Skelos,
+        Adam B (1982- )","Skelos, Dean G","Wood, Kimba M"],"geo_facet":["New York
+        State"],"multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/nyregion\/11SKELOSweb1\/11SKELOSweb1-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Adam
+        Skelos, the son of the former State Senate majority leader Dean G. Skelos,
+        approached Federal District Court in Manhattan on Thursday.","copyright":"Andrew
+        Renneisen for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/nyregion\/11SKELOSweb1\/11SKELOSweb1-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Adam
+        Skelos, the son of the former State Senate majority leader Dean G. Skelos,
+        approached Federal District Court in Manhattan on Thursday.","copyright":"Andrew
+        Renneisen for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/nyregion\/11SKELOSweb1\/11SKELOSweb1-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"Adam
+        Skelos, the son of the former State Senate majority leader Dean G. Skelos,
+        approached Federal District Court in Manhattan on Thursday.","copyright":"Andrew
+        Renneisen for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/nyregion\/11SKELOSweb1\/11SKELOSweb1-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Adam
+        Skelos, the son of the former State Senate majority leader Dean G. Skelos,
+        approached Federal District Court in Manhattan on Thursday.","copyright":"Andrew
+        Renneisen for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/nyregion\/11SKELOSweb1\/11SKELOSweb1-superJumbo.jpg","format":"superJumbo","height":1367,"width":2048,"type":"image","subtype":"photo","caption":"Adam
+        Skelos, the son of the former State Senate majority leader Dean G. Skelos,
+        approached Federal District Court in Manhattan on Thursday.","copyright":"Andrew
+        Renneisen for The New York Times"}]},{"section":"World","subsection":"Middle
+        East","title":"Hajj Stampede Killed Over 2,400, New Count Finds","abstract":"The
+        stampede during the hajj in Saudi Arabia killed at least 2,411 pilgrims, a
+        new count shows, three times the number of deaths acknowledged by the kingdom
+        three months later.","url":"http:\/\/www.nytimes.com\/aponline\/2015\/12\/10\/world\/middleeast\/ap-ml-saudi-hajj.html","byline":"By
+        THE ASSOCIATED PRESS","item_type":"Article","updated_date":"2015-12-10T01:31:09-5:00","created_date":"2015-12-10T01:31:13-5:00","published_date":"2015-12-10T01:29:40-5:00","material_type_facet":"News","kicker":"","des_facet":"","org_facet":"","per_facet":"","geo_facet":"","multimedia":""},{"section":"U.S.","subsection":"","title":"\u2018I\u2019m
+        a Warrior for the Babies,\u2019 Colorado Suspect Yells","abstract":"Robert
+        L. Dear Jr. disrupted a court hearing where he was charged with 179 counts
+        in the Planned Parenthood shooting that left three people dead in Colorado
+        Springs.","url":"http:\/\/www.nytimes.com\/2015\/12\/10\/us\/colorado-planned-parenthood-shooting.html","byline":"By
+        RICHARD FAUSSET","item_type":"Article","updated_date":"2015-12-09T22:31:51-5:00","created_date":"2015-12-09T16:56:19-5:00","published_date":"2015-12-10T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Murders,
+        Attempted Murders and Homicides"],"org_facet":["Planned Parenthood Federation
+        of America"],"per_facet":["Dear, Robert L Jr (1958- )"],"geo_facet":["Colorado
+        Springs (Colo)"],"multimedia":""},{"section":"Business Day","subsection":"","title":"More
+        Than a Contractor, Not Quite an Employee","abstract":"In the so-called gig
+        economy, ambiguity in the status of workers at companies like Uber and Lyft
+        has led to calls for the creation of a new kind of employment status.","url":"http:\/\/www.nytimes.com\/2015\/12\/11\/business\/a-middle-ground-between-contract-worker-and-employee.html","byline":"By
+        NOAM SCHEIBER","item_type":"Article","updated_date":"2015-12-10T07:37:44-5:00","created_date":"2015-12-10T07:37:50-5:00","published_date":"2015-12-11T00:00:00-5:00","material_type_facet":"News
+        Analysis","kicker":"","des_facet":["Labor and Jobs","Freelancing, Self-Employment
+        and Independent Contracting"],"org_facet":["Instacart","Munchery Inc","National
+        Labor Relations Board","Lyft Inc","Uber Technologies Inc"],"per_facet":"","geo_facet":["United
+        States"],"multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/business\/11labor-web1\/11labor-web1-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"A
+        driver for Uber loading a customer''s groceries into his car.","copyright":"Dolly
+        Faibyshev for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/business\/11labor-web1\/11labor-web1-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"A
+        driver for Uber loading a customer''s groceries into his car.","copyright":"Dolly
+        Faibyshev for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/business\/11labor-web1\/11labor-web1-articleInline.jpg","format":"Normal","height":126,"width":190,"type":"image","subtype":"photo","caption":"A
+        driver for Uber loading a customer''s groceries into his car.","copyright":"Dolly
+        Faibyshev for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/business\/11labor-web1\/11labor-web1-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"A
+        driver for Uber loading a customer''s groceries into his car.","copyright":"Dolly
+        Faibyshev for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/business\/11labor-web1\/11labor-web1-superJumbo.jpg","format":"superJumbo","height":1353,"width":2048,"type":"image","subtype":"photo","caption":"A
+        driver for Uber loading a customer''s groceries into his car.","copyright":"Dolly
+        Faibyshev for The New York Times"}]},{"section":"Fashion & Style","subsection":"","title":"Chivalry
+        Isn\u2019t Dead \u2014  It Just Got Smaller","abstract":"Parents, teachers
+        and entrepreneurs are teaching young people old-fashioned civility and manners.","url":"http:\/\/www.nytimes.com\/2015\/12\/10\/fashion\/schooling-children-in-manners-thank-you-very-much.html","byline":"By
+        ALYSON KRUEGER","item_type":"Article","updated_date":"2015-12-09T05:00:03-5:00","created_date":"2015-12-09T05:00:06-5:00","published_date":"2015-12-10T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Customs,
+        Etiquette and Manners","Children and Childhood","Youth"],"org_facet":"","per_facet":"","geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/fashion\/10CHIVALRY1-DIPTYCH\/10CHIVALRY1-DIPTYCH-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"From
+        left, Paige practices wiping her mouth and Richa learns to butter her bread.","copyright":"John
+        Francis Peters for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/fashion\/10CHIVALRY1-DIPTYCH\/10CHIVALRY1-DIPTYCH-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"From
+        left, Paige practices wiping her mouth and Richa learns to butter her bread.","copyright":"John
+        Francis Peters for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/fashion\/10CHIVALRY1-DIPTYCH\/10CHIVALRY1-DIPTYCH-articleInline.jpg","format":"Normal","height":120,"width":190,"type":"image","subtype":"photo","caption":"From
+        left, Paige practices wiping her mouth and Richa learns to butter her bread.","copyright":"John
+        Francis Peters for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/fashion\/10CHIVALRY1-DIPTYCH\/10CHIVALRY1-DIPTYCH-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"From
+        left, Paige practices wiping her mouth and Richa learns to butter her bread.","copyright":"John
+        Francis Peters for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/10\/fashion\/10CHIVALRY1-DIPTYCH\/10CHIVALRY1-DIPTYCH-superJumbo.jpg","format":"superJumbo","height":1290,"width":2048,"type":"image","subtype":"photo","caption":"From
+        left, Paige practices wiping her mouth and Richa learns to butter her bread.","copyright":"John
+        Francis Peters for The New York Times"}]},{"section":"Arts","subsection":"Television","title":"Review:
+        \u2018Transparent\u2019 Widens Scope in Season 2","abstract":"This comedy-drama
+        on Amazon broadens its focus beyond Jeffrey Tambor\u2019s character, Maura,
+        to include the family\u2019s children, in-laws, exes and long-gone ancestors.","url":"http:\/\/www.nytimes.com\/2015\/12\/09\/arts\/television\/season-2-of-transparent-expands-its-view-of-the-pfefferman-clan.html","byline":"By
+        JAMES PONIEWOZIK","item_type":"Article","updated_date":"2015-12-08T07:00:01-5:00","created_date":"2015-12-08T07:00:03-5:00","published_date":"2015-12-10T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Television","Transparent
+        (TV Program)"],"org_facet":["Amazon.com Inc"],"per_facet":["Soloway, Jill","Tambor,
+        Jeffrey","Hoffmann, Gaby"],"geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/08\/arts\/09TRANSPARENT\/09TRANSPARENT-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"From
+        left, Amy Landecker and Gaby Hoffmann in \u201cTransparent.\u201d","copyright":"Amazon
+        Studios"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/08\/arts\/09TRANSPARENT\/09TRANSPARENT-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"From
+        left, Amy Landecker and Gaby Hoffmann in \u201cTransparent.\u201d","copyright":"Amazon
+        Studios"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/08\/arts\/09TRANSPARENT\/09TRANSPARENT-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"From
+        left, Amy Landecker and Gaby Hoffmann in \u201cTransparent.\u201d","copyright":"Amazon
+        Studios"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/08\/arts\/09TRANSPARENT\/09TRANSPARENT-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"From
+        left, Amy Landecker and Gaby Hoffmann in \u201cTransparent.\u201d","copyright":"Amazon
+        Studios"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/08\/arts\/09TRANSPARENT\/09TRANSPARENT-superJumbo.jpg","format":"superJumbo","height":1367,"width":2048,"type":"image","subtype":"photo","caption":"From
+        left, Amy Landecker and Gaby Hoffmann in \u201cTransparent.\u201d","copyright":"Amazon
+        Studios"}]}]}'
+    http_version: 
+  recorded_at: Thu, 10 Dec 2015 18:48:49 GMT
+- request:
+    method: get
+    uri: http://freegeoip.net/json/127.0.0.1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freegeoip.net
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json
+      X-Database-Date:
+      - Wed, 02 Dec 2015 07:06:47 GMT
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9876'
+      X-Ratelimit-Reset:
+      - '2125'
+      Date:
+      - Thu, 10 Dec 2015 18:48:50 GMT
+      Content-Length:
+      - '170'
+    body:
+      encoding: UTF-8
+      string: |
+        {"ip":"127.0.0.1","country_code":"","country_name":"","region_code":"","region_name":"","city":"","zip_code":"","time_zone":"","latitude":0,"longitude":0,"metro_code":0}
+    http_version: 
+  recorded_at: Thu, 10 Dec 2015 18:48:49 GMT
+- request:
+    method: get
+    uri: http://api.seatgeek.com/2/events?datetime_local.gte=2015-12-10&venue.city=Boston
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.seatgeek.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - TornadoServer/3.2 (Gunicorn/18.0)
+      Etag:
+      - '"0f12582165c905e9ec44377be40cb9d32da75fa6"'
+      Cache-Control:
+      - max-age=1800
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3573'
+      Accept-Ranges:
+      - none
+      Date:
+      - Thu, 10 Dec 2015 18:48:50 GMT
+      X-Varnish:
+      - 1598119812 1598099454
+      Age:
+      - '548'
+      Via:
+      - 1.1 varnish
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"per_page":10,"total":1285,"page":1,"geolocation":null},"events":[{"links":[],"id":2955699,"stats":{"listing_count":0,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Sara
+        Evans","announce_date":"2015-12-05T00:00:00","score":0.53742,"date_tbd":false,"type":"concert","datetime_local":"2015-12-10T16:00:00","visible_until_utc":"2015-12-11T01:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"performers":[{"stats":{"event_count":4},"name":"Sara
+        Evans","short_name":"Sara Evans","url":"https://seatgeek.com/sara-evans-tickets","type":"band","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/sara-evans-6ef634/1586/huge.jpg","home_venue_id":null,"primary":true,"score":0.53337,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/sara-evans-6ef634/1586/huge.jpg"},"slug":"sara-evans","taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":1586,"genres":[{"slug":"country","primary":true,"name":"country"}]}],"url":"https://seatgeek.com/sara-evans-tickets/boston-massachusetts-boston-symphony-hall-2015-12-10-4-pm/concert/2955699/","created_at":"2015-12-05T00:00:00","venue":{"city":"Boston","name":"Boston
+        Symphony Hall","extended_address":"Boston, MA 02115","url":"https://seatgeek.com/venues/boston-symphony-hall/tickets/","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"boston-symphony-hall","state":"MA","score":0.51845,"postal_code":"02115","location":{"lat":42.3429,"lon":-71.0857},"address":"301
+        Massachusetts Avenue","timezone":"America/New_York","id":584},"short_title":"Sara
+        Evans","datetime_utc":"2015-12-10T21:00:00","datetime_tbd":false},{"links":[],"id":2785134,"stats":{"listing_count":null,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Boston
+        Holiday Pops - Boston","announce_date":"2015-08-27T00:00:00","score":0.48216,"date_tbd":false,"type":"classical","datetime_local":"2015-12-10T16:00:00","visible_until_utc":"2015-12-11T01:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3010000,"name":"classical"}],"performers":[{"stats":{"event_count":25},"name":"Boston
+        Holiday Pops","short_name":"Boston Holiday Pops","url":"https://seatgeek.com/boston-holiday-pops-tickets","type":"theater_classical","image":null,"home_venue_id":null,"primary":true,"score":0.46647,"images":{},"slug":"boston-holiday-pops","taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3010000,"name":"classical"}],"has_upcoming_events":true,"id":38671}],"url":"https://seatgeek.com/boston-holiday-pops-boston-tickets/classical/2015-12-10-4-pm/2785134/","created_at":"2015-08-27T00:00:00","venue":{"city":"Boston","name":"Boston
+        Symphony Hall","extended_address":"Boston, MA 02115","url":"https://seatgeek.com/venues/boston-symphony-hall/tickets/","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"boston-symphony-hall","state":"MA","score":0.51845,"postal_code":"02115","location":{"lat":42.3429,"lon":-71.0857},"address":"301
+        Massachusetts Avenue","timezone":"America/New_York","id":584},"short_title":"Boston
+        Holiday Pops - Boston","datetime_utc":"2015-12-10T21:00:00","datetime_tbd":false},{"links":[],"id":2886707,"stats":{"listing_count":1,"average_price":30.0,"lowest_price_good_deals":null,"lowest_price":30.0,"highest_price":30.0},"title":"Digitour","announce_date":"2015-10-28T00:00:00","score":0.5056,"date_tbd":false,"type":"concert","datetime_local":"2015-12-10T17:30:00","visible_until_utc":"2015-12-11T02:30:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"performers":[{"stats":{"event_count":15},"name":"Digitour","short_name":"Digitour","url":"https://seatgeek.com/digitour-tickets","type":"band","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/digitour-6c518a/8746/huge.jpg","home_venue_id":null,"primary":true,"score":0.45065,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/digitour-6c518a/8746/huge.jpg"},"slug":"digitour","taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":8746},{"stats":{"event_count":15},"name":"The
+        Digitour","short_name":"The Digitour","url":"https://seatgeek.com/the-digitour-tickets","type":"band","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/the-digitour-48905c/14021/huge.jpg","home_venue_id":null,"slug":"the-digitour","score":0.49716,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/the-digitour-48905c/14021/huge.jpg"},"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":14021},{"stats":{"event_count":8},"name":"DigiTour
+        Slaybells","short_name":"DigiTour Slaybells","url":"https://seatgeek.com/digitour-slaybells-tickets","type":"band","image":null,"home_venue_id":null,"slug":"digitour-slaybells","score":0,"images":{},"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":313150}],"url":"https://seatgeek.com/digitour-tickets/boston-massachusetts-paradise-rock-club-2015-12-10-5-30-pm/concert/2886707/","created_at":"2015-10-28T00:00:00","venue":{"city":"Boston","name":"Paradise
+        Rock Club","extended_address":"Boston, MA 02215","url":"https://seatgeek.com/venues/paradise-rock-club/tickets/","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"paradise-rock-club","state":"MA","score":0.52333,"postal_code":"02215","location":{"lat":42.352,"lon":-71.1195},"address":"967
+        Commonwealth Avenue","timezone":"America/New_York","id":540},"short_title":"Digitour","datetime_utc":"2015-12-10T22:30:00","general_admission":true,"datetime_tbd":false},{"links":[],"id":2886709,"stats":{"listing_count":20,"average_price":89.5,"lowest_price_good_deals":78.0,"lowest_price":64.0,"highest_price":183.0},"title":"Cole
+        Swindell","announce_date":"2015-10-28T00:00:00","score":0.64417,"date_tbd":false,"type":"concert","datetime_local":"2015-12-10T19:00:00","visible_until_utc":"2015-12-11T04:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"performers":[{"stats":{"event_count":16},"name":"Cole
+        Swindell","short_name":"Cole Swindell","url":"https://seatgeek.com/cole-swindell-tickets","type":"band","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/cole-swindell-611f4c/253746/huge.jpg","home_venue_id":null,"primary":true,"score":0.65386,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/cole-swindell-611f4c/253746/huge.jpg"},"slug":"cole-swindell","taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":253746}],"url":"https://seatgeek.com/cole-swindell-tickets/boston-massachusetts-house-of-blues-boston-2015-12-10-7-pm/concert/2886709/","created_at":"2015-10-28T00:00:00","venue":{"city":"Boston","name":"House
+        of Blues Boston","extended_address":"Boston, MA 02215","url":"https://seatgeek.com/venues/house-of-blues-boston/tickets/","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"house-of-blues-boston","state":"MA","score":0.63171,"postal_code":"02215","location":{"lat":42.2913,"lon":-71.0889},"address":"15
+        Lansdowne St.","timezone":"America/New_York","id":517},"short_title":"Cole
+        Swindell","datetime_utc":"2015-12-11T00:00:00","datetime_tbd":false},{"links":[],"id":2832794,"stats":{"listing_count":426,"average_price":116.5,"lowest_price_good_deals":28.0,"lowest_price":28.0,"highest_price":583.0},"title":"Jingle
+        Ball with Calvin Harris, The Weeknd, Demi Lovato and more","announce_date":"2015-10-01T00:00:00","score":0.78962,"date_tbd":false,"type":"concert","datetime_local":"2015-12-10T19:00:00","visible_until_utc":"2015-12-11T04:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"performers":[{"stats":{"event_count":51},"name":"Demi
+        Lovato","short_name":"Demi Lovato","url":"https://seatgeek.com/demi-lovato-tickets","type":"band","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/demi-lovato-6f68df/586/huge.jpg","home_venue_id":null,"slug":"demi-lovato","score":0.63223,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/demi-lovato-6f68df/586/huge.jpg"},"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":586,"genres":[{"slug":"pop","primary":true,"name":"pop"}]},{"stats":{"event_count":8},"name":"Nick
+        Jonas","short_name":"Nick Jonas","url":"https://seatgeek.com/nick-jonas-tickets","type":"band","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/nick-jonas-1e493c/10372/huge.jpg","home_venue_id":null,"slug":"nick-jonas","score":0.59213,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/nick-jonas-1e493c/10372/huge.jpg"},"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":10372,"genres":[{"slug":"pop","primary":true,"name":"pop"}]},{"stats":{"event_count":5},"name":"Calvin
+        Harris","short_name":"Calvin Harris","url":"https://seatgeek.com/calvin-harris-tickets","type":"band","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/calvin-harris-6ddcd8/11466/huge.jpg","home_venue_id":null,"slug":"calvin-harris","score":0.5913,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/calvin-harris-6ddcd8/11466/huge.jpg"},"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":11466,"genres":[{"slug":"electronic","primary":true,"name":"electronic"}]},{"stats":{"event_count":19},"name":"The
+        Weeknd","short_name":"The Weeknd","url":"https://seatgeek.com/the-weeknd-tickets","type":"band","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/the-weeknd-7713f3/13733/huge.jpg","home_venue_id":null,"slug":"the-weeknd","score":0.68657,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/the-weeknd-7713f3/13733/huge.jpg"},"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":13733,"genres":[{"slug":"rnb","primary":true,"name":"rnb"}]},{"stats":{"event_count":1},"name":"Kiss
+        108 Jingle Ball","short_name":"Kiss 108 Jingle Ball","url":"https://seatgeek.com/kiss-108-jingle-ball-tickets","type":"music_festival","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/kiss-108-jingle-ball-b1d492/13795/huge.jpg","home_venue_id":null,"slug":"kiss-108-jingle-ball","score":0.79562,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/kiss-108-jingle-ball-b1d492/13795/huge.jpg"},"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"},{"parent_id":2000000,"id":2010000,"name":"music_festival"}],"has_upcoming_events":true,"id":13795},{"stats":{"event_count":8},"name":"Jingle
+        Ball","short_name":"Jingle Ball","url":"https://seatgeek.com/jingle-ball-1-tickets","type":"band","image":null,"home_venue_id":null,"slug":"jingle-ball-1","score":0.68831,"images":{},"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":79338},{"stats":{"event_count":33},"name":"Tove
+        Lo","short_name":"Tove Lo","url":"https://seatgeek.com/tove-lo-tickets","type":"band","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/tove-lo-459386/162066/huge.jpg","home_venue_id":null,"slug":"tove-lo","score":0.56763,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/tove-lo-459386/162066/huge.jpg"},"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":162066},{"stats":{"event_count":68},"name":"5
+        Seconds of Summer","short_name":"5 Seconds of Summer","url":"https://seatgeek.com/5-seconds-of-summer-tickets","type":"band","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/5-seconds-of-summer-2d63f5/250427/huge.jpg","home_venue_id":null,"slug":"5-seconds-of-summer","score":0.75891,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/5-seconds-of-summer-2d63f5/250427/huge.jpg"},"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":250427},{"stats":{"event_count":6},"name":"Jingle
+        Ball Concert","short_name":"Jingle Ball Concert","url":"https://seatgeek.com/jingle-ball-concert-tickets","type":"music_festival","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/jingle-ball-concert-2eeb86/295611/huge.jpg","home_venue_id":null,"primary":true,"score":0.72555,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/jingle-ball-concert-2eeb86/295611/huge.jpg"},"slug":"jingle-ball-concert","taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"},{"parent_id":2000000,"id":2010000,"name":"music_festival"}],"has_upcoming_events":true,"id":295611},{"stats":{"event_count":6},"name":"iHeartRadio
+        Jingle Ball","short_name":"iHeartRadio Jingle Ball","url":"https://seatgeek.com/iheartradio-jingle-ball-tickets","type":"music_festival","image":null,"home_venue_id":null,"slug":"iheartradio-jingle-ball","score":0.73804,"images":{},"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"},{"parent_id":2000000,"id":2010000,"name":"music_festival"}],"has_upcoming_events":true,"id":372295}],"url":"https://seatgeek.com/jingle-ball-with-calvin-harris-the-weeknd-demi-lovato-and-more-tickets/boston-massachusetts-td-garden-2015-12-10-7-pm/concert/2832794/","created_at":"2015-10-01T00:00:00","venue":{"city":"Boston","name":"TD
+        Garden","extended_address":"Boston, MA 02114","url":"https://seatgeek.com/venues/td-garden/tickets/","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"td-garden","state":"MA","score":0.85472,"postal_code":"02114","location":{"lat":42.3653,"lon":-71.0618},"address":"100
+        Legends Way","timezone":"America/New_York","id":1544},"short_title":"Jingle
+        Ball with Calvin Harris, The Weeknd, Demi Lovato and more","datetime_utc":"2015-12-11T00:00:00","datetime_tbd":false},{"links":[],"id":2651456,"stats":{"listing_count":15,"average_price":127.5,"lowest_price_good_deals":98.0,"lowest_price":98.0,"highest_price":159.0},"title":"Blue
+        Man Group - Boston","announce_date":"2015-06-19T00:00:00","score":0.55069,"date_tbd":false,"type":"theater","datetime_local":"2015-12-10T19:30:00","visible_until_utc":"2015-12-11T04:30:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"performers":[{"stats":{"event_count":1480},"name":"Blue
+        Man Group","short_name":"Blue Man Group","url":"https://seatgeek.com/blue-man-group-tickets","type":"theater","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/blue-man-group-6cdc66/5194/huge.jpg","home_venue_id":null,"primary":true,"score":0.40122,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/blue-man-group-6cdc66/5194/huge.jpg"},"slug":"blue-man-group","taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"has_upcoming_events":true,"id":5194,"genres":[{"slug":"experimental","primary":true,"name":"experimental"}]}],"url":"https://seatgeek.com/blue-man-group-boston-tickets/theater/2015-12-10-7-30-pm/2651456/","created_at":"2015-06-19T00:00:00","venue":{"city":"Boston","name":"Charles
+        Playhouse","extended_address":"Boston, MA 02116","url":"https://seatgeek.com/venues/charles-playhouse/tickets/","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"charles-playhouse","state":"MA","score":0.42546,"postal_code":"02116","location":{"lat":42.3503,"lon":-71.066},"address":"74
+        Warrenton Street","timezone":"America/New_York","id":3188},"short_title":"Blue
+        Man Group - Boston","datetime_utc":"2015-12-11T00:30:00","datetime_tbd":false},{"links":[],"id":2656448,"stats":{"listing_count":null,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"A
+        Confederacy of Dunces - Boston","announce_date":"2015-06-21T00:00:00","score":0.43276,"date_tbd":false,"type":"theater","datetime_local":"2015-12-10T19:30:00","visible_until_utc":"2015-12-11T04:30:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"performers":[{"stats":{"event_count":15},"name":"A
+        Confederacy of Dunces","short_name":"A Confederacy of Dunces","url":"https://seatgeek.com/a-confederacy-of-dunces-tickets","type":"theater","image":null,"home_venue_id":null,"primary":true,"score":0.41878,"images":{},"slug":"a-confederacy-of-dunces","taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"has_upcoming_events":true,"id":312527}],"url":"https://seatgeek.com/a-confederacy-of-dunces-boston-tickets/theater/2015-12-10-7-30-pm/2656448/","created_at":"2015-06-21T00:00:00","venue":{"city":"Boston","name":"Boston
+        University","extended_address":"Boston, MA 02215","url":"https://seatgeek.com/venues/boston-university/tickets/","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"boston-university","state":"MA","score":0.47799,"postal_code":"02215","location":{"lat":42.3417,"lon":-71.0855},"address":"264
+        Huntington Ave.","timezone":"America/New_York","id":6054},"short_title":"A
+        Confederacy of Dunces - Boston","datetime_utc":"2015-12-11T00:30:00","datetime_tbd":false},{"links":[],"id":2682771,"stats":{"listing_count":19,"average_price":93.5,"lowest_price_good_deals":79.0,"lowest_price":79.0,"highest_price":111.0},"title":"Boston
+        Ballet - Boston","announce_date":"2015-07-09T00:00:00","score":0.52294,"date_tbd":false,"type":"dance_performance_tour","datetime_local":"2015-12-10T19:30:00","visible_until_utc":"2015-12-11T04:30:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3060000,"name":"dance_performance_tour"}],"performers":[{"stats":{"event_count":29},"name":"Boston
+        Ballet","short_name":"Boston Ballet","url":"https://seatgeek.com/boston-ballet-tickets","type":"theater_dance_performance_tour","image":null,"home_venue_id":null,"primary":true,"score":0.39197,"images":{},"slug":"boston-ballet","taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3060000,"name":"dance_performance_tour"}],"has_upcoming_events":true,"id":6688},{"stats":{"event_count":1119},"name":"The
+        Nutcracker","short_name":"The Nutcracker","url":"https://seatgeek.com/the-nutcracker-tickets","type":"theater_dance_performance_tour","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/the-nutcracker-b25092/7746/huge.jpg","home_venue_id":null,"slug":"the-nutcracker","score":0.46033,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/the-nutcracker-b25092/7746/huge.jpg"},"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3060000,"name":"dance_performance_tour"}],"has_upcoming_events":true,"id":7746}],"url":"https://seatgeek.com/boston-ballet-boston-tickets/dance/2015-12-10-7-30-pm/2682771/","created_at":"2015-07-09T00:00:00","venue":{"city":"Boston","name":"Boston
+        Opera House","extended_address":"Boston, MA 02111","url":"https://seatgeek.com/venues/boston-opera-house/tickets/","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"boston-opera-house","state":"MA","score":0.62615,"postal_code":"02111","location":{"lat":42.3586,"lon":-71.0567},"address":"539
+        Washington Street","timezone":"America/New_York","id":2501},"short_title":"Boston
+        Ballet - Boston","datetime_utc":"2015-12-11T00:30:00","datetime_tbd":false},{"links":[],"id":2475241,"stats":{"listing_count":11,"average_price":138.0,"lowest_price_good_deals":138.0,"lowest_price":138.0,"highest_price":180.0},"title":"Once
+        - Boston","announce_date":"2015-01-10T00:00:00","score":0.5746,"date_tbd":false,"type":"broadway_tickets_national","datetime_local":"2015-12-10T19:30:00","visible_until_utc":"2015-12-11T04:30:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3030000,"name":"broadway_tickets_national"}],"performers":[{"stats":{"event_count":126},"name":"Once","short_name":"Once","url":"https://seatgeek.com/once-tickets","type":"theater_broadway_national_tours","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/once-fc200d/12705/huge.jpg","home_venue_id":null,"primary":true,"score":0.44099,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/once-fc200d/12705/huge.jpg"},"slug":"once","taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3030000,"name":"broadway_tickets_national"}],"has_upcoming_events":true,"id":12705},{"stats":{"event_count":14},"name":"Once
+        Boston","short_name":"Once Boston","url":"https://seatgeek.com/once-boston-tickets","type":"band","image":null,"home_venue_id":null,"slug":"once-boston","score":0.32229,"images":{},"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":346762},{"stats":{"event_count":60},"name":"Once","short_name":"Once","url":"https://seatgeek.com/once-3-tickets","type":"theater_broadway_national_tours","image":null,"home_venue_id":null,"slug":"once-3","score":0,"images":{},"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3030000,"name":"broadway_tickets_national"}],"has_upcoming_events":true,"id":371040}],"url":"https://seatgeek.com/once-boston-tickets/shubert-theatre-2015-12-10-7-30-pm/broadway/2475241/","created_at":"2015-01-10T00:00:00","venue":{"city":"Boston","name":"Shubert
+        Theatre","extended_address":"Boston, MA 02116","url":"https://seatgeek.com/venues/shubert-theatre/tickets/","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"shubert-theatre","state":"MA","score":0.57668,"postal_code":"02116","location":{"lat":42.3504,"lon":-71.0654},"address":"265
+        Tremont St","timezone":"America/New_York","id":4485},"short_title":"Once -
+        Boston","datetime_utc":"2015-12-11T00:30:00","datetime_tbd":false},{"links":[],"id":2819763,"stats":{"listing_count":23,"average_price":447,"lowest_price_good_deals":null,"lowest_price":405,"highest_price":593},"title":"Joyce
+        Moreno","announce_date":"2015-09-28T00:00:00","score":0.56682,"date_tbd":false,"type":"concert","datetime_local":"2015-12-10T20:00:00","visible_until_utc":"2015-12-11T05:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"performers":[{"stats":{"event_count":1},"name":"Joyce
+        Moreno","short_name":"Joyce Moreno","url":"https://seatgeek.com/joyce-moreno-tickets","type":"band","image":null,"home_venue_id":null,"primary":true,"score":0,"images":{},"slug":"joyce-moreno","taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":309980},{"stats":{"event_count":1},"name":"Joyce
+        Moreno Meets Berklee","short_name":"Joyce Moreno Meets Berklee","url":"https://seatgeek.com/joyce-moreno-meets-berklee-tickets","type":"band","image":null,"home_venue_id":null,"slug":"joyce-moreno-meets-berklee","score":0,"images":{},"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":353773}],"url":"https://seatgeek.com/joyce-moreno-tickets/boston-massachusetts-berklee-performance-center-2015-12-10-8-pm/concert/2819763/","created_at":"2015-09-28T00:00:00","venue":{"city":"Boston","name":"Berklee
+        Performance Center","extended_address":"Boston, MA 02115","url":"https://seatgeek.com/venues/berklee-performance-center/tickets/","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"berklee-performance-center","state":"MA","score":0.54004,"postal_code":"02115","location":{"lat":42.347,"lon":-71.0874},"address":"136
+        Massachusetts Ave.","timezone":"America/New_York","id":820},"short_title":"Joyce
+        Moreno","datetime_utc":"2015-12-11T01:00:00","datetime_tbd":false}]}'
+    http_version: 
+  recorded_at: Thu, 10 Dec 2015 18:48:50 GMT
 recorded_with: VCR 2.5.0

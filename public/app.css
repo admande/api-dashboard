@@ -5,3 +5,14 @@
 span {
   font-size: 8px;
 }
+
+#ezra {
+  height: 75px;
+  width: 75px;
+}
+
+#seatgeek {
+  float: right;
+  height: auto;
+  width: 140px;
+}
